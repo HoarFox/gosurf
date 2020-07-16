@@ -82,7 +82,11 @@
             transition-delay: 0.5s;
             opacity: 1;
             visibility: visible;
-            transform: translateX(40px);
+            transform: translateX(0);
+
+            @media (max-width: $mobile) {
+              transform: translateX(40px);
+            }
           }
         }
       }
@@ -188,12 +192,19 @@
       display: flex;
       justify-content: space-around;
       align-items: flex-end;
-      flex-wrap: wrap;
       opacity: 0;
       transform: translateX(-75px);
+
+      li:not(:last-child) {
+        margin-right: 20px;
+      }
     }
 
     @media (max-width: $mobile) {
+      li {
+        margin-right: 0 !important;
+      }
+      flex-wrap: wrap;
       min-width: 200px;
     }
   }
