@@ -1,0 +1,27 @@
+// ---------- libs ----------
+
+// slick
+@import "./libs/slick";
+//@import "./libs/slick-theme"; // ??? do I need it?
+
+// --------------------
+
+// ---------- utils ----------
+
+@import "./utils/vars";
+@import "./utils/snippets";
+@import "./utils/fonts";
+@import "./utils/animation";
+
+// --------------------
+
+// ---------- sections ----------
+
+@import "./sections/footer";
+@import "./sections/header";
+@import "./sections/holder";
+@import "./sections/shop";
+@import "./sections/surf";
+@import "./sections/slider";
+
+// --------------------

@@ -1,0 +1,23 @@
+// FOOOTER
+
+.footer {
+  padding: 225px 0 34px;
+  text-align: center;
+
+  @media (max-width: $mobile) {
+    padding-top: 100px;
+  }
+
+  &__btn {
+    margin-bottom: 27px;
+  }
+
+  &__copy {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 1.05px;
+    opacity: 0.5;
+  }
+}

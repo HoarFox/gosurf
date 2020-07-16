@@ -1,0 +1,25 @@
+.line-animation {
+  stroke-dashoffset: 600;
+  stroke-dasharray: 600;
+  animation: trackAn 5s infinite 6s;
+}
+
+@keyframes trackAn {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes puls {
+  0% {
+    box-shadow: 0px 0px 15px rgba($green, 0.837777);
+  }
+
+  50% {
+    box-shadow: 0px 0px 15px 5px rgba($green, 0.75);
+  }
+
+  100% {
+    box-shadow: 0px 0px 15px rgba($green, 0.837777);
+  }
+}
