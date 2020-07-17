@@ -20,7 +20,7 @@ body {
   text-transform: uppercase;
 
   min-width: 320px;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a {
@@ -362,4 +362,8 @@ input[type="number"] {
       right: auto;
     }
   }
+}
+
+.visible {
+  visibility: visible !important;
 }

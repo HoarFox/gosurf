@@ -85,6 +85,8 @@ $(function () {
     ],
   });
 
+  $(".surf-box").on("animationend", addVisible);
+
   $(".surf__map").slick({
     slidesToShow: 8,
     slidesToScroll: 1,
@@ -126,6 +128,8 @@ $(function () {
       },
     ],
   });
+
+  $(".surf__point").on("animationend", addVisible);
 
   $(".holder-slider, .shop-slider").slick({
     infinite: true,
@@ -235,4 +239,8 @@ $(function () {
     btn.removeClass("active");
     preventScrollEl.css("overflow", "auto");
   });
+
+  function addVisible() {
+    $(this).addClass("visible");
+  }
 });
