@@ -94,7 +94,7 @@
   }
 
   &__menu-background {
-    position: absolute;
+    position: fixed;
     right: 50px;
     top: 90px;
     transform: translate(50%, -50%);
@@ -285,7 +285,7 @@
     position: relative;
     padding-left: 19px;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       width: 11px;
       height: 13px;
